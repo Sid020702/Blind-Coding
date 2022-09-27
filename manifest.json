@@ -1,0 +1,21 @@
+{
+    "name": "Blind Coding Screen",
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "permissions": [
+                "tabs",
+                "http://*/*",
+                "https://*/*",
+                "storage"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
